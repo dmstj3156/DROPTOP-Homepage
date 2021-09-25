@@ -366,22 +366,25 @@ header nav > ul > li a,span{
   float: left;
   
 }
-#contents3 .new:hover{
-  transform: scale(1,1);
+#contents3 .new img:hover {
+  animation: mybox 4s infinite alternate linear;
 }
-#contents3 .new:hover img{
-  transform: scale(1.02,1);
-}
-#contents3 .col:hover img{
-  transform: scale(1.01,1);
+
+#contents3 .col:hover{
+  animation: mybox 4s infinite alternate linear;
 }
 #contents3 .imgNew img{
   width: 545px;
   height: 700px;
   object-fit: cover;
+ 
   
 }
-#contents3 .col img{
+@keyframes mybox{
+  from {-webkit-transform:scale3d(1.00, 1.00, 1.00); transform:scale3d(1.00, 1.00, 1.00);}
+  to {-webkit-transform:scale3d(1.02, 1.02, 1.02); transform:scale3d(1.05, 1.00,1.05);}
+}
+  #contents3 .col img{
   width: 545px;
   height: 350px;
   object-fit: cover;
