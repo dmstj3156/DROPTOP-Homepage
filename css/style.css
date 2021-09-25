@@ -101,7 +101,7 @@ header .gnb1box{
 }
 header nav{
   position: absolute;
-  right: 0;
+  right: -20px;
   top: 30px;
   margin-right: 100px;
   
